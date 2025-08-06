@@ -8,24 +8,24 @@ public class Solution {
 
     public static void main(String[] args) {
         Scanner ch=new Scanner(System.in);
-        int n=ch.nextInt();
+        char n=ch.next();
         switch(n){
-                case 1:
+                case A:
                     System.out.println("Monday");
                     break;
-                case 2:
+                case B:
                     System.out.println("Tuesday");
                     break;
-                case 3:
+                case C:
                     System.out.println("Wednesday");
                     break;
-                case 4:
+                case D:
                     System.out.println("Thursday");
                     break;
-                case 5:
+                case E:
                     System.out.println("Friday");
                     break;
-                case 6:
+                case F:
                     System.out.println("Saturday");
                     break;
                 case 7:
