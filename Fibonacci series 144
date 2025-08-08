@@ -25,6 +25,6 @@ public class Solution {
                 sum += fib;
             }
         }
-        System.out.println("The Sum of Fibonacci value is " + (double)sum);
+        System.out.println("The Sum of Fibonacci value is " + (float)sum);
     }
 }
