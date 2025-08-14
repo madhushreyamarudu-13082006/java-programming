@@ -5,25 +5,20 @@ import java.math.*;
 import java.util.regex.*;
 
 public class Solution {
+
     public static void main(String[] args) {
-        Scanner ch = new Scanner(System.in);
-        String str1 = ch.next();
-        String str2 = ch.next();
-        if (areAnagrams(str1, str2)) {
+        Scanner s=new Scanner(System.in);
+        String s1=s.nextLine();
+        String s2=s.nextLine();
+        char c1[]=s1.toCharArray();
+        Arrays.sort(c1);
+        char c2[]=s2.toCharArray();
+        Arrays.sort(c2);
+        if (Arrays.equals(c1, c2)) {
             System.out.println("The given strings are an anagram");
         } else {
             System.out.println("The given strings are not an anagram");
         }
-    }
-    static boolean areAnagrams(String str1, String str2) {
-        if (str1.length() != str2.length()) {
-            return false;
-        }
-        char[] ch1 = str1.toLowerCase().toCharArray();
-        char[] ch2 = str2.toLowerCase().toCharArray();
-        Arrays.sort(ch1);
-        Arrays.sort(ch2);
-        return Arrays.equals(ch1, ch2);
+
     }
 }
-
