@@ -3,21 +3,23 @@ import java.util.*;
 import java.text.*;
 import java.math.*;
 import java.util.regex.*;
+
 public class Solution {
     public static void main(String[] args) {
         Scanner ch = new Scanner(System.in);
         int a = ch.nextInt();
-        if (a >= 0 && a < 100000) {
+        
+        if (a > 0 && a < 100000) {
             System.out.println(am(a));
         } else {
-            System.out.println("Invaild Input");
+            System.out.println("Invalid Input");
         }
     }
-
     static String am(int a) {
         int n = a;
         int sum = 0;
         int digits = String.valueOf(a).length();
+        
         while (a > 0) {
             int rem = a % 10;
             sum += (int) Math.pow(rem, digits);
@@ -30,5 +32,3 @@ public class Solution {
         }
     }
 }
-
-
